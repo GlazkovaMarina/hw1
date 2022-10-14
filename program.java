@@ -33,11 +33,22 @@
 
 //  public class program {
 //     public static void main(String[] args) {
-
-//         for (int i = 1; i <= 1000; i++) {
-//             System.out.printf("%3d ", i);
-//             if (i % 30 == 0) // вывод по 30 значений в строке
-//                 System.out.println();   
+//         int count = 0;
+//         for (int i = 2; i <= 1000; i++) {
+//             boolean flag = true;
+//             for (int j = 2; j <= i - 1; j++){
+//                 if (i % j == 0){
+//                     flag = false;
+//                     break;
+//                 }
+//             }
+//             if (flag == true){
+//                 System.out.printf("%3d ", i);
+//                 count++;
+//                 if (count % 30 == 0){
+//                     System.out.println();
+//                 }
+//             }
 //         }
 //     }
 // }
